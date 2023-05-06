@@ -1,0 +1,240 @@
+<header>
+    <nav>
+        <div class="neurl-logo">
+            <img src={{logo}} alt="neurl logo" />
+            <span>Neurl</span>
+        </div>
+        <ul>
+            <li><a href="#services">Services</a></li>
+            <a href="/"><button class="call-to-action">Schedule a Call</button></a>
+        </ul>
+        <div class="mobile-menu">
+            <div class="mobile-menu-icon">
+                <img src={{hamburger}}
+                [ngStyle]="{'display' : isOpen ? 'none' : 'block' }"
+                (click)="handleMenu()"
+                 alt="mobile menu icon"/>
+            </div>
+            <div class="mobile" *ngIf="isOpen">
+                <div class="close">
+                    <img src={{cancel}} 
+                    (click)="closeMenu()"
+                    [ngStyle]="{'display' : isOpen ? 'block' : 'none'}"
+                    alt="close menu" />
+                </div>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li (click)="closeMenu()"><a href="#services">Services</a></li>
+                    <a href="/"><button class="call-to-action">Schedule a Call</button></a>
+                </ul>
+            </div>
+        </div>
+    </nav>
+   
+  </header>
+
+  <main>
+    <section class="hero">
+        <div class="eclipse-one"></div>
+        <div class="eclipse-two"></div>
+        <div class="eclipse-three"></div>
+        <div class="eclipse-hero"></div>
+        <div class="lined-group">
+        <div class="line one"></div>
+        <div class="line two"></div>
+        <div class="line three"></div>
+        <div class="line four"></div>
+        <div class="line five"></div>
+        <div class="line six"></div>
+        <div class="line seven"></div>
+        <div class="line eight"></div>
+        <div class="line nine"></div>
+        <div class="line ten"></div>
+
+        </div>
+        
+            <div class="hero-container">
+                <div class="hero-context">
+                    <h1>We create technical content
+                    for your audience
+                    </h1>
+                    <div class="sub-heading">
+                        <p>
+                            Neurl is on a mission to demystify complex data science and engineering topics for your preferred audience
+                        </p>
+                    </div>
+                
+                </div>
+
+                <div class="hero-image">
+                    <img src={{hero}} alt="hero image" />
+                </div>
+
+                <div class="hero-call-to-action-container">
+                    <a href="/"><button class="hero-call-to-action">Schedule a Call</button></a>
+                </div>
+      
+            </div>
+    </section>
+    <section class="what-we-do" id="services">
+        <div class="what-we-do-container">
+            <div class="what-we-do-title">
+                <h1>What we do</h1>
+                <span>By outsourcing technical content development to us, you can free up your engineers and data scientists to concentrate on critical aspects of your business.                </span>
+            </div>
+            <div class="what-we-do-elements">
+                <div class="elements-container">
+                    <div class="element">
+                        <div class="icon-container">
+                            <img src={{technical}} alt="technical blog article icon" />
+                        </div>
+                        <div class="context">
+                            <h3>Technical Blog Articles</h3>
+                            <p>We create in-depth articles that simplify technical topics for your audience.</p>
+                        </div>
+                    </div>
+                    <div class="element">
+                        <div class="icon-container">
+                            <img src={{edit}} alt="technical blog article icon" />
+                        </div>
+                        <div class="context">
+                            <h3>Edit external documentation/articles</h3>
+                            <p>Depending on your requirements, we can help edit or re-purpose current documentation or blog articles.</p>
+                        </div>
+                    </div>
+                    <div class="element">
+                        <div class="icon-container">
+                            <img src={{tutorial}} alt="technical blog article icon" />
+                        </div>
+                        <div class="context">
+                            <h3>Tutorials (How-To’s, Guides and Video Explainers)</h3>
+                            <p>We can show your audience how to utilize the different functions of your product.</p>
+                        </div>
+                    </div>
+                    <div class="element">
+                        <div class="icon-container">
+                            <img src={{custom}} alt="technical blog article icon" />
+                        </div>
+                        <div class="context">
+                            <h3>Custom</h3>
+                            <p>If you need a service you think we can offer, schedule a call with us.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    </section>
+    <section class="hire-us">
+        <div class="hire-us-container">
+            <div class="hire-us-left-container">
+                <div class="outer-eclipse">
+                    <div class="ball one"></div>
+                    <div class="ball two"></div>
+                </div>
+                <div class="outer-outer-eclipse">
+                    <div class="ball"></div>
+                </div>
+               
+                <div class="inner-eclipse">
+                    <div class="ball one"></div>
+                    <div class="ball two"></div>
+                </div>
+                <div class="inner-inner-eclipse">
+                    <div class="ball"></div>
+                </div>
+                
+                
+                <div class="icon-container">
+                    <img src={{logo}} alt="neurl logo"/>
+                </div>
+            </div>
+            <div class="hire-us-right-container">
+                <div class="hire-us-context">
+                    <h2>We are here to help you meet your business goals...</h2>
+                    <p>Good technical content can enable you build a community of users and get people talking about your product</p>
+                    <div class="hire-us-call-to-action">
+                        <span>Hire Us<span class="right-arrow"><img src={{rightArrow}} alt="right arrow" /></span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section class="how-it-works">
+        <div class="how-it-works-eclipse-one"></div>
+        <div class="how-it-works-eclipse-two"></div>
+        <div class="how-it-works-container">
+            <div class="how-it-works-title">
+                <h2>How it works</h2>
+                <h3>3 steps</h3>
+            </div>
+
+            <div class="how-it-works-content">
+                <div class="how-it-works-cards">
+                    <div class="how-it-works-card">
+                        <div class="eclipse"></div>
+                        <div class="eclipse-two"></div>
+                        <span>1</span>
+                        <div class="card-icon">
+                            <img src={{scheduleCall}} />
+                        </div>
+                        <div class="content">
+                            <h3>Schedule a call</h3>
+                            <p>An introductory call to
+                                learn more about your organization,  content strategy and how we can help.</p>
+                        </div>
+                    </div>
+
+                    <div class="how-it-works-card">
+                        <div class="eclipse"></div>
+                        <div class="eclipse-two"></div>
+                        <span>2</span>
+                        <div class="card-icon">
+                            <img src={{contentPlan}} />
+                        </div>
+                        <div class="content">
+                            <h3>Content Plan Creation</h3>
+                            <p>We will onboard your organization to ensure we are both on the same page, then we create a content plan based on your requirements and budget.</p>
+                        </div>
+                    </div>
+
+                    <div class="how-it-works-card">
+                        <div class="eclipse"></div>
+                        <div class="eclipse-two"></div>
+                        <span>3</span>
+                        <div class="card-icon">
+                            <img src={{publish}} alt=""/>
+                        </div>
+                        <div class="content">
+                            <h3>Ready to Publish</h3>
+                            <p>As soon as we have worked out the details with you, our authors will get started and you will receive quality content at a predetermined timeframe.</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="hero-call-to-action-container">
+                <a href="/"><button class="hero-call-to-action">Schedule a Call</button></a>
+            </div>
+        </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-container">
+        <div class="footer-top">
+            <div class="neurl-logo">
+                <img src={{logo}} alt="neurl logo" />
+                <span>Neurl</span>
+            </div>
+            <div class="socials">
+                <a class="social" href={{twitterLink}}><img src={{twitter}} alt="twitter"/></a>
+                <a class="social" href={{twitterLink}}><img src={{linkedIn}} alt="linkedIn" /></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>&copy; All Rights Reserved Neurl 2023</span>
+        </div>
+    </div>
+  </footer>
