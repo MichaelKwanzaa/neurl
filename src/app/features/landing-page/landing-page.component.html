@@ -1,31 +1,31 @@
 <header>
     <nav>
         <div class="neurl-logo">
-            <img src={{logo}} alt="neurl logo" />
+            <img src={{logo}}  alt="Neurl logo"  />
             <span>Neurl</span>
         </div>
         <ul>
-            <li><a href="#services">Services</a></li>
-            <a href="/"><button class="call-to-action">Schedule a Call</button></a>
+            <li><a href="#services" title="Link to Services section">Services</a></li>
+            <a href="https://calendar.app.google/44ymW7Jp9qUA3my66" target="_blank" title="Schedule A Call"><button class="call-to-action">Schedule a Call</button></a>
         </ul>
         <div class="mobile-menu">
             <div class="mobile-menu-icon">
                 <img src={{hamburger}}
                 [ngStyle]="{'display' : isOpen ? 'none' : 'block' }"
                 (click)="handleMenu()"
-                 alt="mobile menu icon"/>
+                 alt="Mobile Menu Icon"/>
             </div>
             <div class="mobile" *ngIf="isOpen">
                 <div class="close">
                     <img src={{cancel}} 
                     (click)="closeMenu()"
                     [ngStyle]="{'display' : isOpen ? 'block' : 'none'}"
-                    alt="close menu" />
+                    alt="Close Menu Icon" />
                 </div>
                 <ul>
                     <li><a href="/">Home</a></li>
-                    <li (click)="closeMenu()"><a href="#services">Services</a></li>
-                    <a href="/"><button class="call-to-action">Schedule a Call</button></a>
+                    <li (click)="closeMenu()"><a href="#services" title="Link to Services section">Services</a></li>
+                    <a href="https://calendar.app.google/44ymW7Jp9qUA3my66" target="_blank" title="Schedule A Call"><button class="call-to-action">Schedule a Call</button></a>
                 </ul>
             </div>
         </div>
@@ -71,7 +71,7 @@
                 </div>
 
                 <div class="hero-call-to-action-container">
-                    <a href="/"><button class="hero-call-to-action">Schedule a Call</button></a>
+                    <a href="https://calendar.app.google/44ymW7Jp9qUA3my66" target="_blank"><button class="hero-call-to-action">Schedule a Call</button></a>
                 </div>
       
             </div>
@@ -216,7 +216,7 @@
             </div>
 
             <div class="hero-call-to-action-container">
-                <a href="/"><button class="hero-call-to-action">Schedule a Call</button></a>
+                <a href="https://calendar.app.google/44ymW7Jp9qUA3my66" target="_blank"><button class="hero-call-to-action">Schedule a Call</button></a>
             </div>
         </div>
     </section>
@@ -225,12 +225,12 @@
     <div class="footer-container">
         <div class="footer-top">
             <div class="neurl-logo">
-                <img src={{logo}} alt="neurl logo" />
+                <img src={{logo}} alt="Neurl logo" />
                 <span>Neurl</span>
             </div>
             <div class="socials">
-                <a class="social" href={{twitterLink}}><img src={{twitter}} alt="twitter"/></a>
-                <a class="social" href={{twitterLink}}><img src={{linkedIn}} alt="linkedIn" /></a>
+                <a class="social" title="Twitter Link" target="_blank" href={{twitterLink}}><img src={{twitter}} alt="twitter"/></a>
+                <a class="social" title="LinkedIn Link" target="_blank" href={{linkedInLink}}><img src={{linkedIn}} alt="linkedIn" /></a>
             </div>
         </div>
         <div class="footer-bottom">

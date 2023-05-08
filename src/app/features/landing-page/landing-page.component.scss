@@ -658,7 +658,7 @@ main{
         min-height: 110vh;
         width: 100%;
         z-index: 4;
-        margin: 1rem 0;
+        margin: 8rem 0;
 
         .how-it-works-eclipse-one{
             position: absolute;
@@ -697,19 +697,20 @@ main{
                     font-family: 'Poppins';
                     font-style: normal;
                     font-weight: 600;
-                    font-size: 48px;
+                    font-size: 62px;
                     line-height: 64px;
                     /* identical to box height, or 133% */
 
                     text-align: center;
 
                     color: #FFFFFF;
+                    margin-bottom: 1.8rem;
                 }
 
                 h3{
                     font-family: 'Poppins';
                     font-style: normal;
-                    font-weight: 400;
+                    font-weight: 300;
                     font-size: 20px;
                     line-height: 28px;
                     /* identical to box height, or 140% */
